@@ -17,6 +17,10 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import Navbar from "./navbar";
 import ReportCard from "./cards";
 import { useNavigate } from "react-router-dom";
+import CustomPieChartCmp from "./CustomPieChartcmp";
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+import { styled } from '@mui/material/styles';
 
 const drawerWidth = 240;
 
@@ -136,9 +140,14 @@ export default function Dashboard() {
           </List>
         </Box>
       </Drawer>
-      <Box component="main" sx={{ flexGrow: 1, ml: 6, mt: 3 }}>
+      <Box component="main" sx={{ flexGrow: 1, ml: 6, mt: 3, p: 5 }}>
         <Toolbar />
-        <ReportCard />
+        <Grid container spacing={2}>
+          <Grid spacing={2}>
+            <CustomPieChartCmp />
+          </Grid>
+        </Grid>
+
       </Box>
     </Box>
   );

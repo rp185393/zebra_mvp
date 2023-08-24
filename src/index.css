@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Fixed-card-forData {
+  height: 350px;
+  width: 300px;
+  margin: 10px;
+  font-size: 10px;
+
+}
